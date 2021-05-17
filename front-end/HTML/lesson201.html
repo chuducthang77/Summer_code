@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML201</title>
+
+    <!--Favicons-->
+    <link rel="shortcut icon" href="img/pngtree-correct-icon-image_1267804.jpeg" type="image/png">
+</head>
+<body>
+    <!--This is a new way to do underline-->
+    <p>
+        <spa style="text-decoration: underline;"> Lorem ipsum dolor sit, amet consectetur adipisicing elit</span>. Expedita non minima necessitatibus, nemo labore nisi! Commodi quas fugit fuga facere, exercitationem labore nisi consequuntur reprehenderit praesentium, provident dolores quo perferendis.
+    </p>
+
+    <!--Internal link-->
+    <h1 id='top'>Welcome to HTML201</h1>
+    <a href="#bottom">Scroll to bottom of page</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus dolorum laboriosam nesciunt, iste asperiores nobis velit voluptatem at eligendi neque aspernatur repudiandae, explicabo deleniti! Asperiores nihil numquam sunt. Corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione non totam id hic laboriosam optio nisi doloremque eum. Officiis doloremque pariatur eius numquam minima ullam nam eum suscipit a.</p>
+    <div id='bottom'>
+        <a href="#top">Scroll to top of page</a>
+    </div>
+
+    <!--Path-->
+    <img src="img/pngtree-correct-icon-image_1267804.jpeg" alt="Break">
+
+    <!--Table-->
+    <table border="1" width='100%'>
+        <tr>
+            <td>Cell 1</td><td>Cell 1.1</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td><td>Cell 2.1</td>
+        </tr>
+    </table>
+    <!--Merging table-->
+
+    <table border="1", width='100%'>
+        <tbody>
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Cell width-->
+    <table border="1", width=100%>
+        <tr>
+            <td width="20%">Hello</td>
+            <td width="40%">World</td>
+            <td>!!</td>
+        </tr>
+    </table>
+
+    <table border="1", width=100%>
+        <tr>
+            <th colspan="2">Table</th>
+        </tr>
+        <tr>
+            <td width=20%><h3>Navigation</h3></td>
+            <td><h3>Content</h3></td>
+        </tr>
+    </table>
+
+    <!--Inline CSS-->
+    <div style="padding: 40px; color: white; background-color: black;"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Doloremque corrupti dolorem aliquam sequi expedita. 
+        Dignissimos molestias quam est sed consectetur a accusamus, autem nulla ipsam laborum ratione.
+         Expedita, eum sit!
+    </div>
+
+    <!--HTML class-->
+
+    <style>
+        .styleclass{
+            padding: 40px; 
+            color: white; 
+            background-color: black;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+        #testingId{
+            border: 13px solid red
+        }
+    </style>
+    <div class="styleclass uppercase">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Possimus nostrum excepturi sint labore perferendis distinctio et alias mollitia quisquam 
+        at sit officia dicta itaque id repudiandae cum, magni repellendus assumenda.
+    </div>
+
+    <!--HTML ID-->
+    <div id='testingId'>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Assumenda iure ab, quod fugit architecto qui hic magni! Quae, 
+        saepe soluta fugit magni, aliquam, officia nesciunt nisi dicta odio doloribus nemo.
+    </div>
+
+    <!--Code format-->
+    <pre>
+        Hello World         My name
+        is Thang
+    </pre>
+
+    <div>
+        <code> Lorem ipsum dolor sit amet consectetur adipisicing</code> elit. Animi inventore quia porro repellat eum voluptatibus ipsa tempora deleniti, fuga illum tempore natus, corrupti assumenda praesentium incidunt suscipit? Molestiae, officiis ratione?
+    </div>
+
+    <!--HTML entities-->
+    <div>
+        &lt;div&gt;
+    </div>
+
+    CopyRight <sup>&copy;</sup> 2020
+
+    <!--Form-->
+    <!--Text-->
+    <form method="GET">
+        <div>
+            <input required type="email" name='Enter' value="Helloworld" placeholder="Enter your name">
+        </div>
+        <div>
+            <textarea required name="" id="" cols="30" rows="10" placeholder="Placeholder">White    space matter in here</textarea>
+        </div>
+        <div>
+            <button type="submit">Click me</button>
+        </div>
+        <div>
+            <select name="Selected option" id="">
+                <!-- <option value="nothing" disabled='disabled'>nothing</option> -->
+                <option value="option 1">This is value 1</option>
+                <option value="option 2">This is value 2</option>
+                <option value="defaulted" disabled='selected'>defaulted</option>
+            </select>
+        </div>
+    </form>
+
+    <!--Embeds-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L9Vs0g2Rqzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
+</body>
+</html>
+

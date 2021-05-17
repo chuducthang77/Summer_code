@@ -1,0 +1,23 @@
+4 main components:
+- HTML: "bone structure"
+- CSS: beautiful web
+- Javascript: interactivity when click the button or type in the box
+- Server-side: Python, PHP, nodejs
+- Script vs Programming language
+- Web requests
+- Request size
+- Get/Post/Delete/Put/Patch - RESTful API
+- website -> IP address -> Server
+- Server response: HTML/CSS/Javascript
+- View your requests/response
+
+Nice shortcuts (Vscode):
+- Command left/right: skip to the beginning/end of the line
+- Option left/right: skip to word by word
+- Command X: delete the whole line
+- Ctrl R: switch workplace
+- Command P: search for file
+- Option + Command + Arrow key: write at multiple line at the same time
+- Command D: select multiple key at the same time
+
+Webpage vs website

@@ -34,6 +34,6 @@
 3. Deep Learning
 
 ### Research Projects
-1. Coronavirus
-2. Clever Shopper
+1. [Coronavirus](https://github.com/chuducthang77/Summer_code/tree/main/bioinformatics)
+2. [Clever Shopper](https://github.com/chuducthang77/Summer_code/tree/main/clever_shopper)
 3. Drug repositioning 
