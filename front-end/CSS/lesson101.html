@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 101</title>
+    <!--CSS common way to write code -->
+    <!--Internal CSS-->
+    <style>
+        h1 {color: blue;}
+        p {background-color: rgba(123, 123,123, 0.4);}
+    </style>
+    <!--Class selector-->
+    <style>
+        .blue {color: blueviolet;}
+        .upper {text-transform: uppercase;}
+
+        /*ID selector*/
+        #the-title {text-decoration: underline;
+    }
+    </style>
+    
+    <!--Group CSS-->
+    <style>
+        h2, h3 {
+            color: green;
+        }
+    </style>
+    
+    <!--Nested CSS-->
+    <style>
+        h4 strong {
+            color: pink
+        }
+    </style>
+
+    <!--Comment CSS-->
+    <style>
+        /*This is a comment in CSS*/
+    </style>
+    
+    <!--Change the link-->
+    <style>
+        a {color: black;}
+        a:hover {color: blue;}
+        a:active {color: red;}
+        a:visited {color: pink;}
+    </style>
+
+    <!--Measurement: px, rem, em -->
+
+    <style>
+        body {
+            background-color: blueviolet;
+            background-image: url("css.jpg");
+            background-size: contain;
+            
+            background-position: center center;
+        }
+    </style>
+
+</head>
+<body> 
+    <!--Inline CSS-->
+    <h1 style="font-size: 13px;">This is an h1</h1>
+    <h1 style="color: aqua; font-size: 13px;">This is another h1</h1>
+
+    <!--Internal CSS-->
+    <h1>This is an h1</h1>
+    <h1>This is another h1</h1>
+
+    <div>This is a div</div>
+    <p>This is a paragraph</p>
+     
+    <!--Class selector-->
+    <div id='the-title'>This is a second div</div>
+    <div class="upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cum est debitis ut ad aut velit aliquam unde, officiis laborum. Ipsa aliquam dignissimos labore, praesentium molestias obcaecati repudiandae fuga hic.</div>
+
+    <!--Group selectors-->
+    <h2>Hello </h2>
+    <h3>World</h3>
+
+    <!--Nested selectors-->
+    <div>
+        <h4>
+            <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</strong>. Fugiat corporis quia fuga deserunt rem laboriosam quam molestias in aliquam, nihil officia? Ullam provident fugit ipsam consequatur totam, quas perspiciatis cum.
+        </h4>
+        <h5><strong>This is Thang</strong></h5>
+    </div>
+
+    <a href="https://github.com/chuducthang77">Link Link Link</a>
+</body>
+</html>
