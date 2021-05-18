@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 201</title>
+</head>
+<body>
+    <button class='button'>CLICK ME!!!</button>
+    <div>Name....</div>
+    <div id='name'>Name</div>
+    <div>Height....</div>
+    <div id='height'>Height</div>
+    <div>Mass</div>
+    <div id='mass'>Mass</div>
+
+
+    <script>
+        const name = document.getElementById('name')
+        const height = document.getElementById('height')
+        const mass = document.getElementById('mass')
+        const button = document.querySelector('button')
+        //Not not to use query selector
+        button.addEventListener('click', (e) => {
+            e.preventDefault()
+            let number = Math.ceil(Math.random()*82);
+            fetch(`https://swapi.dev/api/people/${number}/`)
+                .then(response => response.json())
+                .then(data => {console.log(data),
+                name.innerHTML = data['name'], 
+                height.innerHTML = data['height'], 
+                mass.innerHTML =data['mass'] })
+            
+        })
+        
+    </script>
+    
+</body>
+</html>

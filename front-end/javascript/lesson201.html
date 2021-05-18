@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // window.onload = function() {
+        //     alert("Page is loaded");
+        // }
+
+        // window.onbeforeunload = function() {
+        //     console.log("Before unload");
+        //     return "Are you want to reload?";
+        // }
+        
+        // //Strict comparison: same value and same datatype
+        // let number = "0";
+        // if (number === 0) {
+        //     console.log(true)
+        // } else {
+        //     console.log(false)
+        // }
+
+        // //Variable Hoisting: var name is created but uninitialized
+        // console.log("First: ", name);
+        // var name = "Thang";
+        // console.log("Second ", name);
+
+        // //Variable closures
+        // let person = "Thang";
+        // function greeting() {
+        //     console.log(`Hello ${person}`);
+        //     let person2 = 'Nam';
+        // }
+        // greeting();
+        // //console.log(`Hello ${person2}`);
+
+        // //Callbacks: The last line -> 2.5 second -> Do this thing in here
+        // console.log("Waiting 2.5 seconds");
+        // setTimeout(function() {
+        //     console.log("Do this thing in here");
+        // }, 2500)
+        // console.log("The last line");
+        
+        // //Use strict: Has to comment the above code 
+        // "use strict";
+        // x = 'things';
+
+        // //Interval: For every x
+        // let count = 0;
+        // const myInterval = setInterval(function() {
+        //     console.log("Checking something....");
+        //     count++;
+        //     if(count === 3) {
+        //         clearInterval(myInterval);
+        //         console.log("The last one is ended");
+        //     }
+        // }, 2000)
+
+        // //While loop
+        // //Date format
+
+        // let d = new Date(2025, 1, 15)
+        // d.getFullYear();
+        // d.getDate();
+        // const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        // months[d.getMonth()];
+        
+        // //Destructuring an array
+        // const random = ['Hello', 'Thang', 'My'];
+        // const [hello, thang] = random;
+
+        // const person7 = {
+        //     "name1" : "Thang",
+        //     "github": "abcde"
+        // }
+        // const {name1, github} = person7
+
+        // //Delete object property
+        // const person8 = {
+        //     'name2': "Thang"
+        // }
+        // delete person8['name2'];
+
+        // //Math operator
+        // Math.round(4.4444);
+        // //Math.power(2,3);
+        // Math.sqrt(9);
+        // Math.max(1,3,2);
+        // Math.min(2,1,5);
+        // Math.floor(23.9);
+        // Math.ceil(23.1);
+        // Math.random();
+
+        // //Math game
+        // while (true) {
+        //     let number = prompt("Guess the number");
+        //     number = Number(number);
+        //     const random = Math.ceil(Math.random() * 10);
+            
+        //     if (number === random) {
+        //         alert("You WIN");
+        //         break
+        //     } else {
+        //         console.log("Your guess is wrong");
+        //     }
+        // }
+
+        // //Try, Catch, exception
+        // try {
+        //     throw "Thang makes an error";
+        //     console.log("Skipping in here");
+        // } catch(error) {
+        //     console.warn(error);
+        // } finally {
+        //     console.log("Finally!!!!")
+        // }
+        // console.log("Show ME!!!!")
+        
+        // //this keyword
+        // const person10 = {
+        //     'name': 'thang',
+        //     speak() {
+        //         console.log(`My name is ${this.name}`);
+        //     }
+        // }
+        // person10.speak();
+
+        // function counter() {
+        //     if (this.count == undefined) {
+        //         this.count = 1;
+        //     } else {
+        //         this.count++;
+        //     }
+        //     console.log(this.count);
+        // }
+
+        // //Arrow function 
+        // const yolo = () => {
+        //     console.log("Hello")
+        // }
+        // yolo()
+        // const returnkeyword = () => 'Arrow function';
+        // returnkeyword()
+
+        // //Class and constructor
+        // class MyclassName {
+        //     constructor(age) {
+        //         this.age = age
+        //     }
+        //     setName(name){
+        //         this.name = name;
+        //     }
+        //     speak() {
+        //         console.log(this.name);
+        //     }
+        // }
+
+        // const thing = new MyclassName(11)
+        // thing.speak()
+        // thing.setName('Lambo')
+
+        //Fetch API
+        fetch("https://swapi.dev/api/planets/3/")
+            .then(response => response.json())
+            .then(data => {console.log(data)})
+    </script>
+</body>
+</html>
