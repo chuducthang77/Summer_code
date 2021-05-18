@@ -7,59 +7,9 @@
     <title>CSS 101</title>
     <!--CSS common way to write code -->
     <!--Internal CSS-->
-    <style>
-        h1 {color: blue;}
-        p {background-color: rgba(123, 123,123, 0.4);}
-    </style>
-    <!--Class selector-->
-    <style>
-        .blue {color: blueviolet;}
-        .upper {text-transform: uppercase;}
 
-        /*ID selector*/
-        #the-title {text-decoration: underline;
-    }
-    </style>
-    
-    <!--Group CSS-->
-    <style>
-        h2, h3 {
-            color: green;
-        }
-    </style>
-    
-    <!--Nested CSS-->
-    <style>
-        h4 strong {
-            color: pink
-        }
-    </style>
-
-    <!--Comment CSS-->
-    <style>
-        /*This is a comment in CSS*/
-    </style>
-    
-    <!--Change the link-->
-    <style>
-        a {color: black;}
-        a:hover {color: blue;}
-        a:active {color: red;}
-        a:visited {color: pink;}
-    </style>
-
-    <!--Measurement: px, rem, em -->
-
-    <style>
-        body {
-            background-color: blueviolet;
-            background-image: url("css.jpg");
-            background-size: contain;
-            
-            background-position: center center;
-        }
-    </style>
-
+    <!--Link CSS file to HTML page-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
     <!--Inline CSS-->
@@ -90,5 +40,41 @@
     </div>
 
     <a href="https://github.com/chuducthang77">Link Link Link</a>
+
+    <!--Alignment-->
+    <h1 id='alignment'>This is alignment. My name is Thang</h1>
+
+    <!--Border-->
+    <div class="red-border">This is red-border</div>
+
+    <!--Change block div to inline-block div-->
+    <div class='inline-div'>This is inline-div</div>
+    <div class='inline-div'>This is inline-div</div>
+
+    <!--Work with width-->
+    <div class="half-width">This is half-width</div>
+    
+    <!--Box shadow-->
+    <div id="box">This is a box</div>
+
+    <!--Padding-->
+    <div class="padding">This is a padding</div>
+
+    <!--Margin-->
+    <div class="margin">This is a margin</div>
+
+    <!--Max width-->
+    <div id="max-width">This is max-width</div>
+
+    <!--Opacity-->
+    <div id="opacity">This is opacity</div>
+
+    <!--Inline Image-->
+    <p>
+        <br/> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, est porro facere sapiente reprehenderit repellendus incidunt facilis inventore at, nobis beatae quisquam nostrum, ipsam neque unde deleniti aliquid. Culpa, maiores.
+        <br/> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt repellendus omnis, explicabo beatae ducimus in optio dicta necessitatibus autem vero nulla possimus maiores temporibus dolores minima saepe quas dolorem incidunt.
+        <img src="css.jpg" alt="No image"  style='float: right;' width=100px>
+        <br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea tempore dolore voluptates quam praesentium veritatis corrupti quia explicabo dolor. Officia unde ex repellat labore debitis eum incidunt esse dolor!
+    </p>
 </body>
 </html>

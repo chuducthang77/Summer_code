@@ -1,0 +1,138 @@
+
+h1 {color: blue;}
+p {background-color: rgba(123, 123,123, 0.4);}
+/* 
+<!--Class selector--> */
+
+.blue {color: blueviolet;}
+.upper {text-transform: uppercase;}
+
+/*ID selector*/
+#the-title {text-decoration: underline;
+}
+
+
+/* <!--Group CSS--> */
+
+h2, h3 {
+    color: green;
+}
+
+
+<!--Nested CSS-->
+
+h4 strong {
+    color: pink
+}
+
+/* 
+<!--Comment CSS--> */
+
+/*This is a comment in CSS*/
+
+
+/* <!--Change the link--> */
+
+a {color: black;}
+a:hover {color: blue;}
+a:active {color: red;}
+a:visited {color: pink;}
+
+
+/* <!--Measurement: px, rem, em --> */
+
+
+body {
+    background-color: blueviolet;
+    background-image: url("css.jpg");
+    background-size: contain;
+    
+    background-position: center center;
+}
+
+
+/* <!--Alignment CSS--> */
+
+h1#alignment {
+    text-align: center;
+}
+
+/* 
+<!--Border--> */
+
+div.red-border {
+    border-width: 5px;
+    border-style: solid;
+    border-color: aquamarine;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+    height: 200px;
+    width: 200px;
+
+}
+
+
+
+div.inline-div {
+    display:inline-block;
+    width:200px;
+    height:200px
+}
+
+
+/* <!--Width change--> */
+
+div.half-width {
+    width: 50%;
+    border: 1px red;
+}
+
+/* <!--Shadow Box--> */
+
+div#box {
+    width:200px;
+    height: 200px;
+    border: 2px black;
+    background-image: url("css.jpg");
+    background-position: center center;
+    border-radius: 0 50% 0 50%;
+    box-shadow: 2px 2px 15px inset red;
+}
+
+
+/* <!--Padding--> */
+
+div.padding {
+    padding:10px 15px 20px 25px;
+}
+
+
+/* <!--Margin--> */
+
+div.margin{
+    margin: auto;
+}
+
+
+/* <!--Inline maximum width--> */
+
+div#max_width {
+    max-width: 500px;
+}
+
+
+/* <!--Opacity--> */
+
+div#opacity {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    color: red;
+    padding: 25px;
+    background-color: black;
+    opacity: 50%;
+}
+
