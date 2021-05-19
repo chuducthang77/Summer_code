@@ -1,0 +1,8 @@
+Download the package: node.js
+Check the current version of the package: node -v, npm-v
+sudo chown -R chuthang: /usr/local/lib/node_modules
+npm install -g create-react-app
+npx create-react-app my-app
+cd my-app
+ls -la
+npm start
