@@ -1,0 +1,21 @@
+API: Programming Interface 
+- RESTful API: Representational State Transfer
+- HTTP GET: READ CRUD load a website, get data from another computer, simply asking for data, not creating, updating o r deleting
+- HTTP POST: Create CRUD, create a new users, do not go through standard URL
+- HTTP DELETE: Delete CRUD, do not go through standard URL
+- HTTP PATCH: do not go through standard URL, update a piece of a resource, UPDATE/REPLACE
+- HTTP PUT: do not go through standard URL, update an entire of resource, PARTIAL UPDATE/MODIFY
+- HTTP status codes:
+    + 200 -- OK: request accepted
+    + 201 -- Created: POST requests often return 201s when a resource is Created
+    + 202 -- Accepted. Requests are accepted but not done processing
+    + 3-- Redirect response
+    + 301: Moved Permanently
+    + 302: Found
+    + 400 - Bad Request, my end is wrong
+    + 401 - Unauthorized 
+    + 403 - Forbidden
+    + 404 - Not Found
+    + 405 - Method No Allowed
+    + 500 - Internal Server Error: server end is wrong
+API Keys: passwords to access API

@@ -22,13 +22,14 @@ class StarWars extends React.Component{
       name: null,
       height: null,
       homeworld: null,
-      films: []
+      films: [],
+      image: null
     }
   }
 
   getNewCharacter() {
-    let number = Math.ceil(Math.random()*82)
-    const url = `https://swapi.dev/api/people/${number}/`
+    const number = Math.ceil(Math.random()*88)
+    const url = `https://raw.githubusercontent.com/akabab/starwars-api/master/api/id/${number}.json`
     fetch(url)
       .then(response => response.json())
       .then(data => this.setState(
@@ -37,6 +38,7 @@ class StarWars extends React.Component{
             height: data['height'],
             homeworld: data['homeworld'],
             films: data['films'],
+            image: data['image'],
             loadedCharacter: true
           }
         )
@@ -46,26 +48,23 @@ class StarWars extends React.Component{
   }
   render() {
 
-    const movies = this.state.films.map((url, index) => {
-      return <FilmItemRow  key={index} url={url}/>
-    })
+
     return (
-      
       <div>
-        {
-          this.state.loadedCharacter &&
-          <div>
-              <h1>{this.state.name}</h1>
-              <h1>{this.state.height} cm</h1>
-              <a href={this.state.homeworld}>Homeworld</a>
-              <ul>
-                {movies}
-              </ul>
-          </div>
-        }
-
-        <button type='button' className='random-button' onClick={() => this.getNewCharacter()}>Randomize character</button>
-
+        <div className='content'>
+          {
+            this.state.loadedCharacter &&
+            <div>
+                <p><img src={this.state.image}></img></p>
+                <h1>{this.state.name}</h1>
+                <h1>{this.state.height} cm</h1>
+                <a href={this.state.homeworld}>Homeworld</a>
+                <h1>{this.state.films}</h1>
+            </div>
+          }
+          <button type='button' className='random-button' onClick={() => this.getNewCharacter()}>Randomize character</button>
+        </div>
+        <div className="img" style={{background: `url(${this.state.image})`}}></div>
       </div>
     )
   }
