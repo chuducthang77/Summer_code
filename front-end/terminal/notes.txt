@@ -1,0 +1,13 @@
+date
+cal
+pwd: Current directory
+open .: Open the current directory
+ls -la: Show all (hidden) files
+cd ~/: Go to home directory
+ls -la | grep ".": Search for keywords (case sensitive)
+mv filename filename: Rename the file 
+cp filename filename: Copy the file to a new file
+touch filename: Create new empty files 
+nano/vim filename: to write the filename 
+cat filename: view the internal of file without editing
+rm -r/ rmdir: Delete directory
