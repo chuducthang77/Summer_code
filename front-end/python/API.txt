@@ -3,6 +3,12 @@ python -m venv .venv
 source .venv/bin/activate
 deactivate
 
+pip install pipenv
+pipenv install
+pipenv shell
+exit
+pipenv --rm
+
 --Ipython--
 on Python list. , words. to show the options
 instead we do ipython on terminal
