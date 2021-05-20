@@ -1,0 +1,5 @@
+Initialize the http server
+
+python3.7 python -m http.server
+
+Check this: Ngrok
