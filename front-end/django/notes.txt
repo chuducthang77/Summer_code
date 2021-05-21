@@ -8,3 +8,7 @@ python manage.py runserver 0.0.0.0:8000
 Go to website and enter: localhost:8000
 Access the admin of the server: localhost:8000/admin
 python manage.py createsuperuser
+python manage.py startapp feed
+put 'feed' in mysite/settings.py (INSTALLED_APPS)
+python manage.py makemigrations 
+Django thumbnail package
