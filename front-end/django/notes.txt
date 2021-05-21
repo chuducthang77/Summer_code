@@ -1,4 +1,10 @@
 Command to set up:
 pipenv install Django
 git commit -m "1. Setting up a pipenv"
-
+pipenv shell
+django-admin startproject mysite .
+python manage.py migrate
+python manage.py runserver 0.0.0.0:8000
+Go to website and enter: localhost:8000
+Access the admin of the server: localhost:8000/admin
+python manage.py createsuperuser
