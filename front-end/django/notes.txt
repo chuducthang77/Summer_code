@@ -1,0 +1,4 @@
+Command to set up:
+pipenv install Django
+git commit -m "1. Setting up a pipenv"
+
